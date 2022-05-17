@@ -1,0 +1,117 @@
+html {
+    font-family: "Agency FB";
+}
+
+#header {
+    height: 100px;
+    width: 100%;
+    margin: auto;
+    border: 1px solid bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+.empty {
+    height: 50px;
+    width: 100%;
+}
+
+#footer {
+    height: 50px;
+    width: 100%;
+    border: 1px solid bisque;
+    margin: auto;
+    background-color: #b2a7a7;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    position: fixed; /* Фиксированное положение */
+    left: 0; 
+    bottom: 0;
+}
+
+#header > h1 {
+    height: 50%;
+    width: 100%;
+}
+
+a > img {
+    height: 50px;
+    width: 50px;
+}
+
+.cont {
+    display: flex;
+    height: 50%;
+    width: 100%;
+}
+
+p {
+    font-family: "Agency FB";
+    margin: 0px 5px 0px 5px;
+}
+
+img {
+    height: 150px;
+    width: 225px;
+    border-radius: 5%;
+}
+
+.card {
+    height: 150px;
+    width: 100%;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid black;
+    transition: 1s;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    background-color: beige;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.card:hover {
+    box-shadow: 2px 1px rgb(107, 104, 104);
+}
+
+.card > p {
+    margin: 0px 5px 0px 5px;
+}
+
+.form {
+    padding: 10px;
+    background-color: #F5F5F5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -250px 0 0 -272px;
+    width: 500px;
+    height: auto;
+    border-radius: 12px;
+    border: 1px solid #000;
+}
+
+#password {
+    width: 250px;
+}
+
+#password_repeat {
+    width: 250px;
+}
+
+.cont1 {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.cont2 {
+    flex: 1;
+}

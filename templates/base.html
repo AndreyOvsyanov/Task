@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<div id="header">
+    <h1><p>Насущные проблемы городской среды</p></h1>
+
+	<div class="cont">
+        <p><a href="/index">Главная страница</a></p>
+        {% if user %}
+        <p><a href="/logout">Выход</a></p>
+        {% else %}
+        <p><a href="/login">Авторизация</a></p>
+        <p><a href="/registry">Регистрация</a></p>
+        {% endif %}
+    </div>
+</div>
+    {% block content %}
+
+    {% endblock %}
+<div id="footer">
+    <div class="cont1"><p>Copyright Andrey © 2022. All rights reserved.</p></div>
+    <div class="cont2"></div><a href="https://github.com/AndreyOvsyanov"><img src="https://gitlab.com/uploads/-/system/group/avatar/10532272/github.png"></a></p></div>
+</div>
+</body>
+</html>

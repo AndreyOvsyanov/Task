@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="form">
+    <h1>Registration</h1>
+    <form action="" method="post" validate>
+        {{ form.hidden_tag() }}
+        <p> {{ form.firstname.label }}<br> {{ form.firstname(size=32) }} </p>
+        <p> {{ form.surname.label }}<br> {{ form.surname(size=32) }} </p>
+        <p> {{ form.lastname.label }}<br> {{ form.lastname(size=32) }} </p>
+        <p> {{ form.email.label }}<br> {{ form.email(size=32) }} </p>
+        <p> {{ form.login.label }}<br> {{ form.login(size=32) }} </p>
+        <p> {{ form.password.label }}<br> {{ form.password(size=120) }} </p>
+        <p> {{ form.password_repeat.label }}<br> {{ form.password_repeat(size=120) }} </p>
+        <p> {{ form.remember_me() }} {{ form.remember_me.label }} </p>
+        <p> {{ form.submit() }} </p>
+    </form>
+    {% if message %}
+    <b><i>{{ message }}</i></b>
+    {% endif %}
+</div>
+
+{% endblock %}

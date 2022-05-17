@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div id="block_content">
+
+			{% for element in record %}
+			<div class="card">
+			<p>
+				<p>{{element['category']}}</p>
+				<p>{{element['name']}}</p>
+				<img src='{{element["photo"]}}'>
+			</p>
+			</div>
+			{% endfor %}
+			<div class="empty">
+				
+			</div>
+</div>
+
+
+{% endblock %}
